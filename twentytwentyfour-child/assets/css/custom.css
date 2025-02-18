@@ -1,0 +1,253 @@
+/* Importar fuente Zen Dots */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url();
+  /* Ajusta color de fondo si deseas */
+}
+
+/* ----- Estilos globales de inputs (opcional) ----- */
+input, textarea, button, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  font-family: 'Zen Dots', cursive;
+  color: #FFFFFF;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #FFFFFF;
+}
+
+/* ----- Navbar ----- */
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  font-family: 'Zen Dots', cursive;
+}
+.navbar .btn-navar {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #49724B;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 18px;
+}
+.navbar .btn-navar a {
+  font-size: 1rem;
+  font-family: 'Zen Dots', cursive;
+  text-decoration: none;
+  padding: 1.5rem;
+  color: #F7F9F4;
+  transition: 0.4s;
+}
+.navbar .btn-navar:hover {
+    background-color: #263B2D;
+}
+
+/* ----- Main content ----- */
+.main-content {
+    width: 90%;
+    margin: 0 auto;
+}
+.main-content .banner {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+.main-content .banner .fetured-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-content .banner .info {
+    margin-bottom: 1.5rem;
+}
+.main-content .banner .info .title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.main-content .banner .info .author,
+.main-content .banner .info .date {
+    display: inline-block;
+    color: #c0c0c0;
+}
+
+.main-content .abstract {margin-top: 1.5rem;}
+.main-content .abstract h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.main-content .abstract p {
+    font-style: italic;
+}
+
+/* ----- Footer ----- */
+footer {
+    background-color: #253B2D;
+    background-image: url('https://verderaiz.com.mx/_next/image?url=/_next/static/media/FooterBG.486c3fcb.png&w=3840&q=75');
+    background-position: center;
+    background-size: cover;
+    color: #F7F9F4;
+    padding: 2rem 0;
+}
+footer h3 {
+    color: #F7F9F4 !important;
+    font-family: 'Cambay', sans-serif !important;
+    font-size: 2rem;
+}
+footer p {
+    font-family: 'Zen Dots', sans-serif;
+}
+footer .footer-section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+footer .footer-section .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer .footer-section iframe {
+    border-radius: 30px;
+    min-height: 100%;
+}
+footer .footer-section .contact-info {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;background-color: #253B2D;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+}
+footer .footer-section .contact-info h3 {
+    font-weight: 400;
+    font-size: 1.5rem !important;
+    padding: 1rem 2rem;
+}
+footer .footer-section .contact-info hr {
+    width: 100%;
+    border: 2px solid #FFFFFF;
+}
+footer .footer-section .contact-info .footer-content-contact-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    padding: 2rem;
+}
+footer .footer-section .contact-info .footer-content-contact-info a,
+footer .footer-section .contact-info .footer-content-contact-info p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: .5rem 0;
+}
+footer .footer-section .contact-info .footer-content-contact-info a {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer .footer-section .contact-info .footer-content-contact-info span {
+    display: block;
+    font-family: 'Zen Dots', sans-serif;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Bloques de WordPress (opcional) */
+.wp-block-group {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+}
+
+
+/* ----- Vista de escritorio (≥ 768px) ----- */
+@media (min-width: 768px) {
+    .navbar {
+        width: 90%;
+    }
+    .navbar .btn-navar {
+        width: auto;
+        margin: 0;
+        background-color: #49724B;
+        padding: 1.5rem 1rem;
+        border-radius: 18px;
+        text-align: center;
+    }
+    .navbar .btn-navar a {
+        font-size: 1.1rem;
+    }
+  footer h3,
+  footer p {
+    text-align: left;
+  }
+  footer .footer-section .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .map {
+    width: 50%;
+  }
+  .contact-info {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+    .main-content .banner {
+        flex-direction: row;
+    }
+    .main-content .banner .fetured-img {
+        width: 30%;
+    }
+    .main-content .banner .fetured-img img {
+        width: 100%;
+    }
+    .main-content .banner .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 100%;
+        width: 70%;
+        padding-left: 1rem;
+    }
+    .main-content .banner .info .title {
+        font-size: 3rem;
+    }
+    .main-content .banner .info div {
+        display: flex;
+        flex-direction: row;
+    }
+    .main-content .banner .info div p {
+        padding-right: 3rem;
+    }
+    footer .footer-section {
+        width: 80%;
+    }
+}
